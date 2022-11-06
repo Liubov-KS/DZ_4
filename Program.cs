@@ -1,50 +1,20 @@
 ﻿//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
-// и возводит число A в натуральную степень B.
-// 3, 5 -> 243 (3⁵)
+// и возводит число A в натуральную степень B. // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
-
 /*
-System.Console.WriteLine("Введите числа A,  B");
-String str  = int.Parse(Console.ReadLine());
-//
+Console.WriteLine("введите число A");
+int numA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите число B");
+int numB = Convert.ToInt32(Console.ReadLine());
+int multiply = numA;
 
-int num = SetNumberA("A");
-int SetNumberA() = (String str(0));
-
-Print(multiply);
-
-//multiply  = SetNumberA(string str) *  multiply;
-
-int multiply = 1;
-    
-    for (int i = 0; i < size; i++)
-    { 
-        multiply = num*multiply;
-        return multiply;
-    }
-
-int size = SetNumberB("B");
-int SetNumberB(string str)
+for (int i = 1; i < numB; i++)
 {
-    System.Console.WriteLine($"Enter number {str}");
-    int size = int.Parse(Console.ReadLine());
-    return size;
+multiply = multiply * numA;
 }
+Console.WriteLine("A в степени B равно: " + multiply);
 
-int size = SetNumberB("B");
-int num = SetNumberA("A");
-int multiply = 1;
-i = 0;
-
-/* for(i=0; i < size; i++)
-{
-    multiply = num*multiply;
-}
-    return multiply;
-
-Console.WriteLine(multiply); 
 */
-
 
 
 
@@ -55,6 +25,19 @@ Console.WriteLine(multiply);
 82 -> 10
 9012 -> 12
 */
+Console.WriteLine("введите число");
+int i = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+
+while (i > 0)
+{
+int num = i % 10;
+i = i / 10;
+sum = sum + num;
+}
+Console.WriteLine("сумма всех цифр в числе равна: " + sum);
+
+
 /* 
 int num  = SetNumber("A");
 int digit = GetSumallSymbolsOfNum(num);
@@ -95,10 +78,11 @@ Console.WriteLine($"number = {num}");
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
 */
-  int[] array = {0, 0, 0, 0, 0, 0, 0, 0};
+/*  int[] array = {0, 0, 0, 0, 0, 0, 0, 0};
  Random arr = new Random();
     for (int i = 0; i < array.Length; i++)
     {
     array[i] = arr.Next(2);
    Console.WriteLine(array[i]);
   }
+*/
