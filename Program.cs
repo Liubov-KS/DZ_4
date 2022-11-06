@@ -1,7 +1,7 @@
 ﻿//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
 // и возводит число A в натуральную степень B. // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
-/*
+
 Console.WriteLine("введите число A");
 int numA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите число B");
@@ -14,7 +14,7 @@ multiply = multiply * numA;
 }
 Console.WriteLine("A в степени B равно: " + multiply);
 
-*/
+
 
 
 
@@ -46,40 +46,8 @@ int numberN = Convert.ToInt32(Console.ReadLine());
 int sumNumber = SumNumber(numberN);
 Console.WriteLine("Сумма цифр в числе: " + sumNumber);
 
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-/* 
-int num  = SetNumber("A");
-int digit = GetSumallSymbolsOfNum(num);
-int sum = 0;
-Print(sum);
 
-int GetSumallSymbolsOfNum(int num);
-{
 
-while (num > 0)
-    {
-        digit = num % 10;
-        if (digit != 0)  
-        {
-            sum = sum + digit;
-            num = num; // 10;
-        }
-        return sum;
-    }
-}
-int SetNumber(string str)
-{
-    System.Console.WriteLine($"Enter number {str}");
-    int num = int.Parse(Console.ReadLine());
-    return num;
-}
-
-void Print(int num)
-{
-Console.WriteLine($"number = {num}");
-}
-*/
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 /*  Задача 29: Напишите программу, которая задаёт массив 
@@ -87,28 +55,10 @@ Console.WriteLine($"number = {num}");
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
 */
-/*  int[] array = {0, 0, 0, 0, 0, 0, 0, 0};
+ int[] array = {0, 0, 0, 0, 0, 0, 0, 0};
  Random arr = new Random();
     for (int i = 0; i < array.Length; i++)
     {
     array[i] = arr.Next(2);
    Console.WriteLine(array[i]);
-  }
-*/
-
-///проверить и удалить//
-/*int [] numbers = new int[8];
-Console.Write("[");
-
-for (int i = 0; i < numbers.Length; i++)
- {
-    numbers [i] = new Random().Next(0, 11);
-    Console.Write(" " + Method (i) + " ");
- }
-Console.Write("]");
-
-int Method (int a)
-{
-    return numbers[a];
-}
-*/
+    }
