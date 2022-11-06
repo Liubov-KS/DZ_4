@@ -2,6 +2,8 @@
 // и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
+
+/*
 System.Console.WriteLine("Введите числа A,  B");
 String str  = int.Parse(Console.ReadLine());
 //
@@ -43,6 +45,9 @@ i = 0;
 Console.WriteLine(multiply); 
 */
 
+
+
+
 /*  Задача 27: Напишите программу, которая принимает на вход число
 // и выдаёт сумму цифр в числе.
 
@@ -83,10 +88,17 @@ Console.WriteLine($"number = {num}");
 }
 */
 
+
+
 /*  Задача 29: Напишите программу, которая задаёт массив 
 из 8 элементов и выводит их на экран.
-
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-
 6, 1, 33 -> [6, 1, 33]
 */
+  int[] array = {0, 0, 0, 0, 0, 0, 0, 0};
+ Random arr = new Random();
+    for (int i = 0; i < array.Length; i++)
+    {
+    array[i] = arr.Next(2);
+   Console.WriteLine(array[i]);
+  }
