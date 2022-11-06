@@ -25,19 +25,28 @@ Console.WriteLine("A в степени B равно: " + multiply);
 82 -> 10
 9012 -> 12
 */
-Console.WriteLine("введите число");
-int i = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
+Console.WriteLine("Введите число N: ");
+int numberN = Convert.ToInt32(Console.ReadLine());
 
-while (i > 0)
+  int SumNumber(int numberN)
 {
-int num = i % 10;
-i = i / 10;
-sum = sum + num;
+    int counter = Convert.ToString(numberN).Length;
+    int advance = 0;
+    int result = 0;
+
+    for (int i = 0; i < counter; i++)
+    {
+      advance = numberN - numberN % 10;
+      result = result + (numberN - advance);
+      numberN = numberN / 10;
+    }
+   return result;
 }
-Console.WriteLine("сумма всех цифр в числе равна: " + sum);
 
+int sumNumber = SumNumber(numberN);
+Console.WriteLine("Сумма цифр в числе: " + sumNumber);
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /* 
 int num  = SetNumber("A");
 int digit = GetSumallSymbolsOfNum(num);
@@ -70,7 +79,7 @@ void Print(int num)
 Console.WriteLine($"number = {num}");
 }
 */
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 /*  Задача 29: Напишите программу, которая задаёт массив 
@@ -85,4 +94,21 @@ Console.WriteLine($"number = {num}");
     array[i] = arr.Next(2);
    Console.WriteLine(array[i]);
   }
+*/
+
+///проверить и удалить//
+/*int [] numbers = new int[8];
+Console.Write("[");
+
+for (int i = 0; i < numbers.Length; i++)
+ {
+    numbers [i] = new Random().Next(0, 11);
+    Console.Write(" " + Method (i) + " ");
+ }
+Console.Write("]");
+
+int Method (int a)
+{
+    return numbers[a];
+}
 */
